@@ -1,0 +1,16 @@
+title: game1_config
+description: game1 config
+template:
+  repo: game1_config-template
+  name: game1_config
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
