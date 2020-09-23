@@ -3,10 +3,12 @@ description: game1 config
 template:
   repo: game1_config-template
   name: game1_config
+  description: test
 before:
   - type: createIssue
     title: Welcome!
     body: new-issue.md
+  - type: createFile
 steps:
   - title: First step
     description: The first step in your course
